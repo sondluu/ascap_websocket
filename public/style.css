@@ -1,0 +1,124 @@
+
+html, body {
+   height:100%;
+}
+
+
+body {
+    margin:0;
+    
+}
+
+
+
+canvas {
+  display: block;
+  margin-left:180px;
+  margin-top:-150px;
+ 
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+
+/* #coCreative{
+margin-left:20px;
+margin-top:10px;
+position:relative;
+font-size: 20pt;
+border: 3px solid black;
+text-align :center;
+line-height: 50px;
+height:50px;
+width:160px;
+border-radius:10px;
+} */
+
+#MCC{
+margin-top:-90px;
+margin-left:10px;
+
+width:150px;
+transform:translate(0px,-50px);
+}
+
+#P1{
+
+margin-left:-150px;
+transform:translate(35px,600px);
+border: 3px solid black;
+border-radius:10px;  
+width:150px;
+  
+}
+
+#camera1{
+  position:relative;
+  height: 90px;
+  width:90px;
+  border-radius:10px;
+  text-align:center;
+  border: 3px solid black;
+  font-family: 'Helvetica';
+  transform: translate(60px,560px);
+}
+
+#hint{
+  position:relative;
+  height: 90px;
+  width: 90px;
+  border-radius:10px;
+  text-align:center;
+  border: 3px solid black;
+  font-family: 'Helvetica';
+  transform: translate(85px,560px);
+}
+#doodle{
+  position:relative;
+  height: 40px;
+  width: 90px;
+  border-radius:10px;
+  text-align:center;
+  border: 3px solid black;
+  font-family: 'Helvetica';
+  transform: translate(110px,535px);
+}
+
+#photo{
+  position:relative;
+  height: 40px;
+  width: 90px;
+  border-radius:10px;
+  text-align:center;
+  border: 3px solid black;
+  font-family: 'Helvetica';
+  transform: translate(15px,585px);
+}
+
+#record{
+  position:absolute;
+  height: 90px;
+  width: 90px;
+  border-radius:10px;
+  text-align:center;
+  border: 3px solid black;
+  font-family: 'Helvetica';
+  transform: translate(225px, 665px);
+
+}
+
+#popUp{
+  margin-left:10px;
+  margin-top:-70px;
+  position:absolute;
+  height:450px;
+  width:150px;
+  border: 3px solid black;
+  border-radius:10px;
+}
+
+.camera_1{
+border:3px solid red;
+
+}
+
