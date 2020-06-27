@@ -40,9 +40,8 @@ function setup() {
   kitty = loadImage("kitty.jpeg");
   phone = loadImage("phone.png");
  // objects[id] = new ObjectDetected(id, x, y, state, localstate, ontime, offtime);
-  socket = io.connect('https://cocreativetest.herokuapp.com/');
-  socket.on('mouse', newDrawing);
-
+  socket = io.connect('https://cocreativetest.herokuapp.com/'); //this is to tell the web shared screen the connection is to be established
+  socket.on('mouse', newDrawing); //send connect message to the server to let server know the client is here
 }
 
 function newDrawing(data){  // function to show kitty image
@@ -126,8 +125,9 @@ function draw() {
         socket.emit('mouse', data);   //send data object that has locations of detections to server
       
         image(kitty, 800-detection.x*4, detection.y*4, detection.width/4, detection.height/4);  // if detection is a person, also show the kitty image
-        
       }
+
+
         persontime1++;
         persontime2 = 0;
 //        meow.rate(1-(detection.x-width/2)/1000);
